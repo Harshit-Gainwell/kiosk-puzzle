@@ -29,17 +29,12 @@ export function GameHeader({ onExit, onRestart, onAdminAccess }: GameHeaderProps
       <div className="h-14 sm:h-16 px-3 sm:px-4 lg:px-6 flex items-center justify-between max-w-screen-2xl mx-auto w-full">
         {/* Left side - Branding and difficulty */}
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center shadow-sm">
-            <span className="text-primary-foreground font-bold text-sm">T</span>
-          </div>
-          <div className="hidden sm:block">
-            <span className="font-semibold text-sm">TIL India</span>
-            {gridConfig && (
-              <span className="ml-2 text-xs px-2 py-0.5 bg-muted rounded-full font-medium">
-                {gridConfig.cols}×{gridConfig.rows}
-              </span>
-            )}
-          </div>
+          <img src="/til-logo.png" alt="TIL Tractors India" className="h-28 sm:h-32 w-auto object-contain" />
+          {gridConfig && (
+            <span className="text-xs px-2 py-0.5 bg-muted rounded-full font-medium hidden sm:inline">
+              {gridConfig.cols}×{gridConfig.rows}
+            </span>
+          )}
         </div>
         
         {/* Center - Stats */}

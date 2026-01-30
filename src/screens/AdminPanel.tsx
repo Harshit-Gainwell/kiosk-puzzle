@@ -64,14 +64,9 @@ export function AdminPanel() {
       {/* Header */}
       <header className="flex-shrink-0 border-b bg-card shadow-sm">
         <div className="h-14 sm:h-16 px-4 sm:px-6 lg:px-8 flex items-center justify-between w-full">
-          <div className="flex items-center gap-2 sm:gap-3">
-            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-primary flex items-center justify-center flex-shrink-0 shadow-md">
-              <span className="text-primary-foreground font-bold text-base sm:text-lg">T</span>
-            </div>
-            <div className="min-w-0">
-              <h1 className="font-semibold text-base sm:text-lg leading-tight truncate">TIL India</h1>
-              <p className="text-xs text-muted-foreground hidden sm:block">Admin Panel</p>
-            </div>
+          <div className="flex items-center gap-3">
+            <img src="/til-logo.png" alt="TIL Tractors India" className="h-32 sm:h-40 w-auto object-contain" />
+            <span className="text-xs text-muted-foreground border-l pl-3 hidden sm:block">Admin Panel</span>
           </div>
         </div>
       </header>

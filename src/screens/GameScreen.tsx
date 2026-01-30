@@ -294,13 +294,8 @@ export function GameScreen() {
       <header className="flex-shrink-0 border-b bg-card shadow-sm">
         <div className="h-14 px-4 sm:px-6 flex items-center justify-between w-full">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center shadow-md">
-              <span className="text-primary-foreground font-bold">T</span>
-            </div>
-            <div>
-              <h1 className="font-semibold text-base leading-tight">TIL India</h1>
-              <p className="text-xs text-muted-foreground">Crane Puzzle</p>
-            </div>
+            <img src="/til-logo.png" alt="TIL Tractors India" className="h-32 sm:h-40 w-auto object-contain" />
+            <span className="text-xs text-muted-foreground border-l pl-3 hidden sm:block">Crane Puzzle</span>
           </div>
           <Button variant="ghost" size="icon" onClick={handleAdminAccess} title="Admin Panel" className="hover:bg-muted">
             <Menu className="h-5 w-5" />
